@@ -4,9 +4,10 @@
 @import 'font';
 @import 'global';
 
+
 @import './layout/header';
 @import './layout/footer';
 
-
+@import './pages/index';
 @import './pages/blog';
 @import './pages/common_problem';
