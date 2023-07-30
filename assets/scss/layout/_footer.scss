@@ -34,6 +34,11 @@
       padding-top: 24px;
       margin-bottom: 24px;
     }
+    .phone-delete {
+      @media (max-width:767px) {
+        display: none;
+      }
+    }
   }
 
   .menu {
@@ -98,7 +103,22 @@
       justify-content: flex-start;
     }
   }
+  .phone-delete {
+    @media (max-width:767px) {
+      display: none;
+    }
+  }
+  
+  .non-pc-delete {
+    display: none;
+  
+    @media (max-width:767px) {
+      display: block;
+    }
+  }
 }
+
+
 
 .terms {
   li {

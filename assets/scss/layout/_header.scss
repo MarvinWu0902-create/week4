@@ -5,29 +5,60 @@
   .layout {
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width:767px) {
+      justify-content: flex-start;
+      flex-direction: column;
+    }
   }
 
-  .img {
-    width: 80px;
-    height: 48.57px;
-    background-image: url('../images/logo-white.png');
-    // 背景圖片引入位置源頭要以all.scss來算
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-indent: 101%;
-    overflow: hidden;
+  h1 {
+    a {
+      display: block;
+      width: 80px;
+      height: 48.57px;
+      background-image: url('../images/logo-white.png');
+      // 背景圖片引入位置源頭要以all.scss來算
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+
+      @media (max-width:767px) {
+        margin: 16px auto 16px 0;
+      }
+    }
   }
 
   .menu {
     padding: 25px 0;
 
+    @media (max-width:767px) {
+      width: 100%;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
     li {
+
+      @media (max-width:767px) {
+        width: 50%;
+        padding: 12px 0;
+        border: 1px solid #fff;
+      }
+
       a {
         display: block;
         font-size: 20px;
         color: #fff;
         margin: 0 32px;
+
+        @media (max-width:767px) {
+          margin: 0;
+          text-align: center;
+        }
 
         &:hover {
           color: #000;
@@ -36,6 +67,11 @@
 
       &:last-child {
         a {
+          @media (max-width:767px) {
+            margin: 0;
+            text-align: center;
+          }
+
           margin-left: 32px;
           margin-right: 0;
         }
@@ -44,34 +80,9 @@
   }
 }
 
-@media (max-width:767px) {
-
-  .header {
-    .layout {
-      justify-content: flex-start;
-      flex-direction: column;
-    }
-
-    .img {
-      margin: 16px auto 16px 0;
-    }
-
-    .menu {
-      width: 100%;
-      padding: 0;
-      flex-wrap: wrap;
-
-      li {
-        width: 50%;
-        padding: 12px 0;
-        border: 1px solid #fff;
-
-        a,
-        &:last-child a {
-          margin: 0;
-          text-align: center;
-        }
-      }
-    }
+@media (max-width:996px) {
+  .others-delete,
+  .pad-delete {
+    display: none;
   }
 }

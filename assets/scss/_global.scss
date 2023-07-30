@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', 'Noto Sans', sans-serif;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
     line-height: 1.5;
     color: #fff
 }
@@ -32,7 +32,7 @@ a {
 .container {
     max-width: 1320px;
     margin: 0 auto;
-    padding: 12px;
+    padding: 0 12px;
 }
 
 
@@ -40,21 +40,11 @@ a {
     margin-bottom: 32px;
 }
 
-.non-pc-delete {
-    display: none;
-  }
 
 @media (max-width:992px) {
     .container {
         padding: 0 36px;
     }
-    .others-delete {
-        display: none;
-    }
-    .pad-delete {
-        display: none;
-    }
-
 }
 @media (max-width:767px) {
     .container {
@@ -68,12 +58,5 @@ a {
     }
     .container-phone {
         padding: 0 15px;
-    }
-    .phone-delete {
-        display: none;
-    }
-
-    .non-pc-delete {
-        display: block;
     }
 }
