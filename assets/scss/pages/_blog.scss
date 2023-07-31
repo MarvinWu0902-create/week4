@@ -42,6 +42,12 @@
     }
 }
 
+.phone-delete {
+    @media (max-width:767px) {
+      display: none;
+    }
+  }
+
 .blog {
     color: #000;
 
