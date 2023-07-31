@@ -367,6 +367,12 @@ a {
   }
 }
 
+@media (max-width: 767px) {
+  .phone-delete {
+    display: none;
+  }
+}
+
 .blog {
   color: #000;
 }
