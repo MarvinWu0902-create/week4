@@ -1,9 +1,11 @@
 .blog-header {
     background-color: $primary-color;
+
     .layout {
         justify-content: space-between;
         align-items: center;
     }
+
     .menu {
         padding: 13px 0;
 
@@ -44,9 +46,9 @@
 
 .phone-delete {
     @media (max-width:767px) {
-      display: none;
+        display: none;
     }
-  }
+}
 
 .blog {
     color: #000;
@@ -71,22 +73,37 @@
         }
     }
 
-    img {
-        width: 636px;
-        height: 400px;
+    // img {
+    //     width: 636px;
+    //     height: 400px;
+    //     margin-right: 24px;
+
+    //     @media (max-width:992px) {
+    //         width: 326px;
+    //         height: 208px;
+    //     }
+
+    //     @media (max-width:767px) {
+    //         width: 348px;
+    //         height: 208px;
+    //         margin-right: 0;
+    //         margin-bottom: 8px;
+    //     }
+    // }
+    .img {
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         margin-right: 24px;
 
-        @media (max-width:992px) {
-            width: 326px;
-            height: 208px;
-        }
-
-        @media (max-width:767px) {
+        @media(max-width:767px) {
             width: 348px;
             height: 208px;
             margin-right: 0;
             margin-bottom: 8px;
         }
+
     }
 
     h3 {
@@ -150,7 +167,25 @@
     }
 
     &-content {
-        position: relative;
+        width: 50%;
+
+        @media (max-width:767px) {
+            width: 348px;
+            // 待確認
+        }
+
+        .content {
+            width: 100%;
+            margin-bottom: 102px;
+
+            @media (max-width:992px) {
+                margin-bottom: 0;
+            }
+        }
+
+        .move-right {
+            justify-content: flex-end;
+        }
 
         @media (max-width:767px) {
             width: 348px;
@@ -158,15 +193,15 @@
     }
 
     a {
-        position: absolute;
-        right: 0;
-        bottom: 0;
+        // position: absolute;
+        // right: 0;
+        // bottom: 0;
         font-size: 36px;
         font-weight: 900;
         color: $primary-color;
 
         @media (max-width:992px) {
-            position: static;
+            // position: static;
             font-size: 16px;
             font-weight: 400;
             color: #555555;
@@ -195,6 +230,28 @@
     }
 
 }
+
+.img1 {
+    background-image: url('../assets/images/blog-1.png');
+}
+
+.img2 {
+    background-image: url('../assets/images/blog-2.png');
+}
+
+.img3 {
+    background-image: url('../assets/images/blog-3.png');
+}
+
+.img4 {
+    background-image: url('../assets/images/blog-4.png');
+}
+
+.img5 {
+    background-image: url('../assets/images/blog-5.png');
+}
+
+
 
 .list-item-mb {
     margin-bottom: 60px;
